@@ -13,8 +13,6 @@
 
 **相关知识**
 
-课件：
-
 http://blog.csdn.net/pmlpml/article/details/78404838
 
 https://blog.csdn.net/pmlpml/article/details/78539261
@@ -27,7 +25,9 @@ https://blog.csdn.net/pmlpml/article/details/78539261
 2. 选择简单的库，如 mux 等，通过源码分析、解释它是如何实现扩展的原理，包括一些 golang 程序设计技巧。
 
 
-<a href="## 5、代码实验">第二部分为简单处理web程序的输入输出</a>
+**第二部分为简单处理web程序的输入输出**
+
+[博客地址](https://hansenbeast.github.io/post/2018-11-16-service-computing-%E5%AE%9E%E9%AA%8C4/#%E4%B8%80-%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1)
 
 
 ## 3、net/http源码剖析
@@ -806,3 +806,19 @@ func NotImplementedHandler(formatter *render.Render) http.HandlerFunc {
 测试：
 
 ![12](screenshots/12.jpg)
+
+
+
+### 七、使用 curl 工具访问 web 程序
+
+`curl http://localhost:8080/api/test`
+
+![13](screenshots/13.jpg)
+
+
+
+### 八、对 web 执行压力测试
+
+![14](screenshots/14.jpg)
+
+![15](screenshots/15.jpg)
